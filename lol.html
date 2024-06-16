@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic tag</title>
+
+  <Style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+
+    }
+
+    .Main {
+      width: 100%;
+      height: 100%;
+      background-color: rgb(196, 112, 3);
+    }
+
+    .navi {
+      width: 100%;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .logo h1 {
+      font-size: 3vw;
+    }
+
+    .items ul {
+      display: flex;
+      align-items: center;
+      gap: 6vw;
+    }
+
+    .items li {
+      list-style: none;
+
+    }
+
+    .items a {
+      text-decoration: none;
+      color: whitesmoke;
+      font-size: 1.9vw;
+      font-weight: 100;
+    }
+
+    .sec1 {
+      width: 100%;
+      height: calc(100% - 80px);
+      /* background-color: burlywood; */
+      display: flex;
+    }
+
+    .imge {
+      width: 100%;
+      height: 100%;
+      /* background-color: aquamarine; */
+    }
+    .imge img{
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: center right top;
+    }
+
+    .text {
+      width: 100%;
+      height: 100%;
+      /* background-color: rgb(8, 109, 75); */
+      position: relative;
+      padding-top: 5vw;
+      padding-left: 10vw;
+    }
+
+    .textpart1 h1 {
+      width: 15vw;
+      font-size: 50px;
+      color: white;
+    }
+
+    .textpart1 h4 {
+      font-size: 22px;
+    }
+
+    .textpart1 .b1 {
+      margin-top: 2vw;
+      font-size: 20px;
+      font-weight: 800;
+      /* border-radius: 10px; */
+      border: none;
+      padding: 1vw 1vw;
+
+    }
+
+    .sec2 {
+      width: 100%;
+      height: 100%;
+      background-color: rgb(250, 61, 61);
+      position: relative;
+    }
+
+    .text2 {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      clip-path: polygon(0 0, 100% 25%, 100% 75%, 0 100%);
+      position: absolute;
+      bottom: 30%;
+      left: 0;
+      background-color: rgb(119, 149, 184);
+
+
+    }
+
+    .textpart2 h1 {
+      width: 25vw;
+      font-size: 55px;
+      color: white;
+      font-weight: 800;
+    }
+
+    .textpart2 h3 {
+      font-size: 25px;
+    }
+
+    .textpart2 .b2 {
+      margin-top: 2vw;
+      font-size: 20px;
+      font-weight: 800;
+      /* border-radius: 10px; */
+      border: none;
+      padding: 1vw 1vw;
+    }
+
+    .imge2 {
+      width: 30%;
+      height: 60%;
+    }
+    .imge2 img{
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: center;
+    }
+    .text3{
+      width: 100%;
+      height: 100%;
+      /* background-color: chartreuse; */
+      position: relative;
+    }
+    .blog{
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+    .blog h1{
+      font-size: 50px;
+      color: azure;
+      text-align: center;
+    }
+    .blog h4{
+      font-size: 22px;
+      font-weight: 600;
+    }
+    .sec3{
+      width: 100%;
+      height: 100%;
+      background-color: cadetblue;
+    }
+  </Style>
+</head>
+
+<body>
+  <main class="Main">
+    <nav class="navi">
+      <div class="logo">
+        <h1>Logo</h1>
+      </div>
+      <div class="items">
+        <ul>
+          <li><a href="#">School supplies</a></li>
+          <li><a href="#">Books</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Servecs</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="sec1">
+      <div class="imge">
+        <img src="https://img.freepik.com/free-photo/man-wearing-t-shirt-gesturing_23-2149393647.jpg?w=740&t=st=1715140131~exp=1715140731~hmac=cc131b81a504cc1ab3dae8f0be7347cc083d157ffd93f825a96637ff916e07da" alt="">
+      </div>
+      <div class="text">
+        <div class="textpart1">
+          <h1>hay! back to school</h1>
+          <h4>Course start party</h4>
+          <button class="b1">
+            Read More
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="sec2">
+      <div class="text2">
+        <div class="textpart2">
+          <h3>School Supplies</h3>
+          <h1>Discover our new <br> material</h1>
+          <button class="b2">
+            Shop Now
+          </button>
+        </div>
+        <div class="imge2">
+         <img src="https://img.freepik.com/free-photo/smiling-happy-indian-student-with-backpack-pointing-his-finger-wall_496169-1532.jpg?w=740&t=st=1715139683~exp=1715140283~hmac=3b95e00027b59c13bc7da64f2a5d7a63cb3a2714d565fc30edc89f1e80558cd9" alt="">
+        </div>
+      </div>
+      <div class="text3">
+         <div class="blog">
+          <h1>Blog</h1>
+          <h4>Find the besttips on our blog </h4>
+         </div>
+         <div class="post">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+         </div>
+      </div>
+
+    </section>
+    <section class ="sec3">
+
+    </section>
+  </main>
+</body>
+
+
+</html>

@@ -1,0 +1,750 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(199, 196, 160);
+}
+
+.baap {
+    width: 100%;
+    height: 100%;
+}
+
+.head {
+    width: 100%;
+    /* height: 100%; */
+    padding: 1px;
+}
+
+.nav {
+    margin-top: 2vw;
+    width: 100%;
+
+    padding-inline: 2vw;
+}
+
+.nav-part2 {
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    padding-inline: 3vw;
+    align-items: center;
+    border-radius: 25px;
+    justify-content: space-between;
+    background-color: rgb(32, 41, 32);
+}
+
+.logo h1 {
+    color: white;
+    font-size: 2.5vw;
+    font-weight: 200;
+}
+
+.elem ul {
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
+
+.elem li {
+    list-style: none;
+}
+
+.elem a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.9vw;
+    font-weight: 100;
+}
+
+.but button {
+    font-size: 1.6vw;
+    font-weight: 400;
+    padding-inline: 1vw;
+    border-radius: 10px;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* background-color: white; */
+    background-color: rgb(199, 196, 160);
+    margin-top: 2vw;
+    padding: 3vw;
+    position: relative;
+}
+
+
+
+.left {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+
+
+}
+
+.center {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    /* transform: translate(-30%, -30%); */
+}
+
+.center h1 {
+    font-size: 4vw;
+}
+
+.center h1 i {
+    color: rgb(136, 134, 7);
+    border-bottom: 1px solid rgb(72, 71, 71);
+    font-size: 5vw;
+}
+
+.center h3 {
+    font-size: 2.4vw;
+    line-height: 2;
+    margin: 3px 0px;
+
+}
+
+.center p {
+    font-size: 1.4vw;
+    color: rgb(37, 53, 51);
+    font-weight: 100;
+}
+
+.butt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5vw;
+
+}
+
+.butt a {
+    text-decoration: none;
+    border: 1px solid rgb(81, 80, 80);
+    padding-inline: 1.8vw;
+    padding-top: 0.3vw;
+    padding-bottom: 0.3vw;
+    font-size: 2vw;
+    font-weight: 800;
+    background-color: rgb(160, 126, 31);
+    color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+
+}
+
+.butt button {
+    font-size: 1.9vw;
+    font-weight: 100;
+
+    padding-inline: 1vw;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #000;
+    color: white;
+
+
+
+}
+
+.right {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(199, 196, 160);
+    padding-left: 18px;
+
+}
+
+.right img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+
+
+.page2 {
+    width: 100%;
+    /* height: 50vh; */
+    /* background-color: aquamarine; */
+    padding: 1vw 3vw;
+}
+
+.for {
+    width: 100%;
+    /* height: 15vw; */
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 50px;
+
+
+}
+
+
+
+.firstf {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw;
+    position: relative;
+}
+
+.row label {
+    font-size: 2.2vw;
+    font-weight: bold;
+}
+
+.row button {
+
+    background-color: green;
+    color: white;
+    font-size: 1.3vw;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+form input {
+
+    width: 18vw;
+    border-radius: 18px;
+    padding: 10px;
+    border: 2px solid rgb(241, 232, 133);
+    background-color: rgb(199, 196, 160);
+}
+
+.page3 {
+    width: 100%;
+}
+
+.text {
+    text-align: center;
+    padding-top: 3vw;
+}
+
+.text h4 {
+    color: rgb(160, 107, 9);
+    font-size: 2vw;
+    font-weight: 300;
+}
+
+.text h1 {
+
+    font-size: 3vw;
+
+
+}
+
+.Card {
+    display: flex;
+    width: 100%;
+    padding: 5vw 5vw;
+    gap: 10px;
+
+}
+
+.read1 {
+
+    background-color: rgb(250, 247, 248);
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.read1 img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #f7f5f5;
+    margin: 10px 10px;
+    position: relative;
+    border: 1px solid rgb(36, 35, 35);
+    padding: 1vw 1vw;
+}
+
+.read1 img::after {
+    content: "";
+    top: 50%;
+    border-radius: 50%;
+    padding: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgb(15, 15, 15);
+    height: 80%;
+    width: 80%;
+    position: absolute;
+}
+
+.read1 p {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px 0px;
+    font-size: 1.3vw;
+    font-weight: 100;
+}
+
+.read1 h1 {
+    font-size: 3vw;
+}
+
+.read1 button {
+    font-size: 1.3vw;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(184, 102, 9);
+    color: white;
+    border: none;
+    margin: 10px 0px;
+}
+
+.page4 {
+    width: 100%;
+    height: 100%;
+    padding: 2vw 2vw 2vw 2vw;
+    position: relative;
+
+
+}
+
+.comn {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.shutterstock.com/shutterstock/photos/1756157303/display_1500/stock-vector-social-distancing-men-and-women-sitting-and-eating-food-at-the-dining-table-that-has-partition-for-1756157303.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content {
+    text-align: center;
+    margin-top: 5vw;
+
+}
+
+
+
+
+
+.content h3 {
+    color: rgb(145, 96, 5);
+    font-size: 2vw;
+}
+
+.content h1 {
+    font-size: 3vw;
+
+}
+
+.content button {
+    border: 1px solid black;
+    /* border: none; */
+    font-size: 1.3vw;
+    border-radius: 15px;
+    padding: 1vw 1vw;
+    background-color: rgb(190, 115, 17);
+    color: #f7f5f5;
+    margin-top: 1vw;
+}
+
+.page5 {
+    width: 100%;
+    height: 100%;
+   
+}
+.Apage{
+   width: 100%;
+  
+    display: flex;
+}
+
+.A {
+    width: 100%;
+    height: 100%;
+    padding: 5vw 5vw 5vw 5vw;
+
+
+}
+
+
+
+.A h5 {
+    font-size: 2vw;
+    color: rgb(145, 96, 5);
+    /* line-height: 2rem; */
+
+}
+
+.A h1 {
+    padding-top: 1vw;
+    font-size: 4vw;
+
+}
+
+.A p {
+    font-size: 1.4vw;
+    /* line-height: 1.8rem; */
+    padding-top: 1.9vw;
+}
+
+.A button {
+    margin-top: 3vw;
+    border: 2px solid black;
+    font-size: 1.3vw;
+    border-radius: 15px;
+    padding: 1vw 1vw;
+    background-color: rgb(190, 115, 17);
+    color: aliceblue;
+}
+
+.B {
+    width: 100%;
+    height: 100%;
+    padding: 3vw 3vw 3vw 3vw;
+    background-color: rgb(199, 196, 160);
+
+
+
+}
+
+/* .B1 {
+    width: 100%;
+    height: 100%;
+
+} */
+
+.B img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1vw
+}
+
+.page6 {
+    width: 100%;
+   
+}
+.Cpage{
+    width: 100%;
+    display: flex;
+}
+
+.C {
+    width: 100%;
+    height: 100%;
+    padding: 3vw 3vw 3vw 3vw;
+
+
+}
+
+.C img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1vw;
+}
+
+.D {
+    width: 100%;
+    height: 100%;
+    padding: 5vw 5vw 5vw 5vw;
+
+}
+
+.D h5 {
+
+    font-size: 2vw;
+    color: rgb(145, 96, 5);
+    /* line-height: 1.3rem; */
+}
+
+.D h2 {
+    font-size: 3vw;
+}
+
+.D p {
+    font-size: 1.4vw;
+    /* line-height: 1.8rem; */
+    padding-top: 2vw;
+}
+
+.D button {
+    margin-top: 2.5vw;
+    border: 2px solid black;
+    font-size: 1.3vw;
+    border-radius: 15px;
+    padding: 1vw 1vw;
+    background-color: rgb(190, 115, 17);
+    color: aliceblue;
+}
+
+.page7 {
+    width: 100%;
+    height: 100%;
+    margin-top: 5vw;
+    /* display: flex; */
+}
+
+.custom {
+    
+    text-align: center;
+}
+
+.custom h1 {
+    font-size: 2.8vw;
+}
+
+.custom h4 {
+    color: rgb(145, 96, 5);
+    font-size: 1.7vw;
+}
+
+.group {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    justify-content: space-around;
+    position: relative;
+
+}
+
+.member {
+    display: flex;
+
+    gap: 10px;
+}
+
+
+
+.member {
+    width: 30%;
+    height: 30%;
+    margin-top: 5vw;
+    position: relative;
+
+}
+
+.member:nth-child(2) {
+    position: absolute;
+    top: 40%;
+}
+
+.Man {
+    width: 100%;
+    padding-inline: 1vw;
+}
+
+
+.Man img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.Man2 {
+    padding-top: 0.4vw;
+}
+
+.Man2 h1 {
+    font-size: 2vw;
+
+}
+
+.Man2 p {
+    font-size: 1.3vw;
+    line-height: 2vw;
+}
+
+.Man2 h3 {
+    font-size: 1vw;
+    font-weight: bold;
+    color: rgb(212, 212, 5);
+}
+
+.page8 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+
+}
+
+.con {
+    margin-top: 3vw;
+
+}
+
+
+
+.con h4 {
+    font-size: 1.7vw;
+    color: rgb(145, 96, 5);
+
+}
+
+.con h1 {
+    font-size: 2.8vw;
+}
+
+.row1 input {
+    color: black;
+    font-size: 1.3vw;
+    width: 35%;
+    background-color: rgb(156, 145, 88);
+    border: none;
+
+    padding: 2vw 2vw 2vw 2vw;
+    margin-top: 1vw;
+
+}
+
+.row2 input {
+    color: black;
+    font-size: 1.3vw;
+    width: 35%;
+    padding: 2vw 2vw 2vw 2vw;
+    background-color: rgb(156, 145, 88);
+    margin-top: 2vw;
+    border: none;
+
+}
+
+.row3 textarea {
+    color: rgb(78, 3, 3);
+    font-size: 1.4vw;
+    background-color: rgb(156, 145, 88);
+    border: none;
+    margin-top: 2vw;
+    border-radius: 10px;
+    padding-left: 1vw;
+
+}
+
+.row4 {
+    margin-top: 2vw;
+}
+
+.row4 button {
+    background-color: rgb(9, 168, 107);
+    padding: 1vw 1vw 1vw 1vw;
+    border-radius: 10px;
+    font-size: 1vw;
+    color: #000;
+    font-weight: bold;
+}
+
+.page9 {
+    width: 100%;
+    height: 50vh;
+    background-color: chocolate;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-top: 3vw;
+}
+
+.coloum h1 {
+    color: white;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.coloum .cols h4 {
+    line-height: 2.6vw;
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+.coloum .inp {
+    margin-top: 2vw;
+}
+
+.coloum .inp input {
+    width: 20vw;
+    padding-top: 1.8vw;
+}
+
+
+@media (max-width:598px) {
+    .main {
+        background-position: center;
+        background-size: cover;
+        background-image: url(https://thumbs.dreamstime.com/z/basic-rgb-147710217.jpg?ct=jpeg);
+    }
+
+    .right {
+        display: none;
+
+    }
+
+    .left {
+
+        font-size: 3vw;
+    }
+
+
+    .center p {
+        font-size: 4vw;
+        color: rgb(65, 64, 64);
+    }
+
+    .butt a {
+        font-size: 1rem;
+    }
+
+    .butt button {
+        font-size: 1rem;
+    }
+
+    .firstf {
+        display: block;
+        padding: 30px;
+    }
+
+    .firstf input {
+        width: 100%;
+    }
+
+    .row button {
+
+        position: relative;
+        left: 40%;
+        margin-top: 10px;
+    }
+
+    .Card {
+
+        flex-wrap: wrap;
+    }
+
+    .read1 p {
+        font-size: 4vw;
+    }
+
+    .read1 button {
+        font-size: 3vw;
+    }
+
+    .Apage {
+        flex-wrap: wrap;
+    }
+    .Cpage {
+        flex-wrap: wrap;
+
+    }
+    .group{
+        flex-wrap: wrap;
+
+    }
+}
