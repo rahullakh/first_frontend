@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100vh;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      h3 {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+      button {
+        font-size: 20px;
+        font-weight: 500;
+        padding: 6px 10px;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>0</h3>
+    <button class="but1">Start</button>
+    <button class="but2">Pause</button>
+    <button class="but3">Resume</button>
+    <button class="but4">Reset</button>
+    <script>
+      var h3 = document.querySelector("h3");
+      var startButton = document.querySelector(".but1");
+      var pauseButton = document.querySelector(".but2");
+      var resumeButton = document.querySelector(".but3");
+      var resetButton = document.querySelector(".but4");
+
+      var count = 0;
+      var int;
+      var isPaused = false;
+
+      startButton.addEventListener("click", () => {
+        if (!int) {
+          int = setInterval(() => {
+            h3.textContent = count++;
+          }, 1000);
+        }
+      });
+
+      pauseButton.addEventListener("click", () => {
+        clearInterval(int);
+        int = null;
+        isPaused = true;
+      });
+
+      resumeButton.addEventListener("click", () => {
+        if (isPaused) {
+          isPaused = false;
+          int = setInterval(() => {
+            h3.textContent = count++;
+          }, 1000);
+        }
+      });
+
+      resetButton.addEventListener("click", () => {
+        clearInterval(int);
+        int = null;
+        isPaused = false;
+        count = 0;
+        h3.textContent = count;
+      });
+    </script>
+  </body>
+</html>
+
+<!-- <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100vh;
+        font-family: sans-serif;
+        padding: 50px;
+      }
+      button {
+        font-size: 20px;
+        font-weight: 500;
+        padding: 6px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>0</h3>
+    <button class="but1">Start</button>
+    <button class="but2">Pouse</button>
+    <button class="but3">Resume</button>
+    <button class="but4">Reset</button>
+    <script>
+      var h3 = document.querySelector("h3");
+      var st = document.querySelector(".but1");
+      var sp = document.querySelector(".but2");
+      var resume = document.querySelector(".but3");
+      var reset = document.querySelector(".but4");
+
+      var int;
+      st.addEventListener("click", () => {
+        var count = 0;
+        int = setInterval(() => {
+          h3.textContent = count++;
+        }, 1000);
+      });
+      sp.addEventListener("click", () => {
+        clearInterval(int);
+      });
+
+      resume.addEventListener("click", () => {});
+
+      reset.addEventListener("click", () => {});
+    </script>
+  </body>
+</html> -->

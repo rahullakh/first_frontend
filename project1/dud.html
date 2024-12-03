@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ImageHover</title>
+    <link rel="icon" href="/proj/project1/shiva.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      .main {
+        width: 100%;
+        height: 100%;
+      }
+      .nav {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background-color: white;
+        gap: 20px;
+        padding: 0 30px;
+      }
+      .nav h4 {
+        font-size: 20px;
+        font-weight: 400;
+      }
+      .nav i {
+        font-size: 20px;
+        color: white;
+        padding: 8px;
+        font-weight: 500;
+        border-radius: 50%;
+        background-color: black;
+      }
+      .center {
+        width: 100%;
+        padding: 40px 80px;
+      }
+      .center h1 {
+        font-size: 4.2vw;
+        font-weight: 500;
+        line-height: 4.6vw;
+      }
+      .innerCenter {
+        width: 100%;
+        height: 200px;
+        margin-top: 42px;
+        display: flex;
+        justify-content: space-between;
+        /* background-color: red; */
+      }
+      .innerCenter p {
+        font-size: 1.6vw;
+        font-weight: 500;
+        line-height: 2.8vw;
+        color: #242323;
+      }
+      .right {
+        width: 30%;
+      }
+      .elem {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* margin: 5px; */
+        padding: 20px 0;
+        border-top: 2px solid black;
+      }
+      .elem i {
+        font-size: 25px;
+        font-weight: 500;
+        opacity: 0;
+      }
+      .elem:hover i {
+        opacity: 1;
+      }
+      .elem:hover a {
+        text-decoration: underline;
+      }
+      .elem a {
+        color: black;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 20px;
+      }
+      .bottom{
+        width: 100%;
+        height: 40%;
+        background: url(https://plus.unsplash.com/premium_photo-1715876268461-7d85ee7b1452?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-size: cover;
+        background-position: 90% 20%;
+      }
+      @media (max-width:600px) {
+        .nav {
+        height: 60px;
+        gap: 20px;
+        padding: 0 20px;
+      }
+      .nav h4 {
+        font-size: 15px;
+        font-weight: 600;
+        /* display: none; */
+      }
+      .nav i {
+        font-size: 15px;
+        color: white;
+        padding: 7px;
+        font-weight: 500;
+        border-radius: 50%;
+        background-color: black;
+      }
+      .center {
+        width: 100%;
+        padding: 15px 20px;
+      }
+      .center h1 {
+        font-size: 10vw;
+        font-weight: 500;
+        line-height: 11vw;
+      }
+      .innerCenter {
+        width: 100%;
+        height: 200px;
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        justify-content: space-between;
+        /* background-color: red; */
+      }
+      .innerCenter p {
+        font-size: 4vw;
+        font-weight: 500;
+        line-height: 6vw;
+        color: #242323;
+      }
+      .right {
+        width: 100%;
+      }
+      .elem {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* margin: 5px; */
+        padding: 10px 0;
+        border-top: 1px solid black;
+      }
+      .elem i {
+        font-size: 18px;
+        font-weight: 500;
+        opacity: 1;
+      }
+      .elem:hover i {
+        opacity: 1;
+      }
+      .elem:hover a {
+        text-decoration: underline;
+      }
+      .elem a {
+        color: black;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+      }
+      .bottom{
+        width: 100%;
+        height: 40%;
+        background: url(https://plus.unsplash.com/premium_photo-1715876268461-7d85ee7b1452?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-size: cover;
+        background-position: 90% 20%;
+      } 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="nav">
+        <h4>About</h4>
+        <h4>News</h4>
+        <h4>Car</h4>
+        <i class="ri-shopping-bag-fill"></i>
+      </div>
+      <div class="center">
+        <h1>
+          Lightly padded,<br />
+          quality jacket in <br />
+          recycled polyster.
+        </h1>
+        <div class="innerCenter">
+          <p>
+            Exclusive brands aspire for the label haute.
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing. <br />
+            Praesentium dolorem sequi minima vitae nisi?
+          </p>
+          <div class="right">
+            <div class="elem">
+              <a href="#">Add to cart</a>
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+            <div class="elem">
+              <a href="#">Product Details</a>
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+            <div class="elem">
+              <a href="#">Shipping</a>
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom"></div>
+    </div>
+  </body>
+</html>
